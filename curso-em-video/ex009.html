@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMV</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Ticket System</h1>
+    Car speed: <input type="number" id="txtbox"> mph
+    <input type="button" value="Check" onclick="whenclicked()">
+    <div id='res'></div>
+
+    <script>
+        
+        function whenclicked(){
+            var textbox = document.getElementById('txtbox')
+            var speed = Number(textbox.value)
+            var resultsbox = document.getElementById('res')
+            var result = document.getElementById('res')
+            result.innerHTML = `<p>The inserted speed is <strong>${speed}mph</strong></p>`
+            if(speed > 60){
+                result.innerHTML += '<p>The car was overspeed. Ticket emited!</p>'
+            }
+            result.innerHTML += 'Always wear a seatbelt!'
+
+            
+        }
+
+    </script>
+</body>
+</html>
