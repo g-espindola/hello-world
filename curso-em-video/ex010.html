@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Identifier</title>
+
+    <style>
+        p{
+            font:normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>American Identifier</h1>
+    <p>
+        Enter your country: <input type="text" id="txtbox"> <input type="button" value="Go" onclick=whenClicked()>
+    </p> 
+    <div id="answer"> </div>
+    <script>
+        function whenClicked(){
+            var textBox = document.getElementById('txtbox')
+            var country = textBox.value
+            var resbox = document.getElementById('answer')
+            country = country.toLowerCase()
+            if (country == 'america' || country == 'usa' || country == 'united states'){
+                resbox.innerHTML = 'You are American. Congratulations!'
+            } else {
+                resbox.innerHTML = 'You are not American. Sorry!'
+            }
+        }
+    </script>
+</body>
+</html>
