@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCat Photo Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MyCat Photo Blog</h1>
+    <div id="preview">
+        <h2>Click on the previews to enlarge them!</h2>
+        <a href="#corona"><img src="smallcorona.png" alt="Cat wearing a corona mask."></a>
+        <a href="#garfield"><img src="smallgarfield.png" alt="Cute orange cat."></a>
+        <a href="#kitten"><img src="kitten.png" alt="Cute gray kitten."></a>
+    </div>
+    <div id="main">
+        <h2>Here are the large photos!</h2>
+        <img src="corona.png" id="corona" alt="Cat wearing a corona mask.">
+        <img src="garfield.png" id="garfield" alt="Cute orange cat.">
+        <img src="largekitten.png" id="kitten" alt="Cute gray kitten.">
+    </div>
+    
+    <form action="#">
+        <h2>What cat is the cutest?</h2>
+        <label for="favcat">
+            <input type="radio" name="favcat" id="favcat" value="corona">
+            Cat Wearing Corona Mask
+        </label>
+        </br>
+        <label for="favcat2">
+            <input type="radio" name="favcat" id="favcat2" value="garfield">
+            Orange cat that looks like Garfield.
+        </label>
+        </br>
+        <label for="favcat3">
+            <input type="radio" name="favcat" id="favcat3" value="kitten">
+            Gray Cute kitten sitting.
+        </label>
+        </br>
+        <h2>And what name would you give it?</h2>
+        <input type="text" name="txtbox" id="txtbox" placeholder="Cat name goes here." required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+       <p>&copy; MyCat Photo Blog</p>
+    </footer>
+</body>
+</html>

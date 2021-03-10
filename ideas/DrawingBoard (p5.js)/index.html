@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <h1>iDrawing</h1>
+    <div id="canvas_div"></div>
+    <div>
+      <button id="clearbtn" onclick="whenClick()">Clear</button>
+      <select id="background_select" onchange="changeBackground()">
+        <option selected="selected">Background Color</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+      </select>
+      <select id="brush_select" onchange="changeBrush()">
+        <option selected="selected">Brush Color</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="gray">Gray</option>
+        <option value="eraser">ERASER</option>
+      </select>
+      <select id="size_select" onchange="changeSize()">
+        <option selected="selected">Brush Size</option>
+        <option value="xsmall">X-Small</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">X-Large</option>
+      </select>
+      <button onclick="saveImg()">Save</button>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
