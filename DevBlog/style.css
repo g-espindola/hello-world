@@ -1,0 +1,29 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#title{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#subtitle{
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+
+footer{
+    padding-top: 12px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.date{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
